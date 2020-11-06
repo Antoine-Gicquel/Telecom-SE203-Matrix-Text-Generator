@@ -1,12 +1,11 @@
 import argparse
 
 
-
 parser = argparse.ArgumentParser()
 parser.add_argument("text", help="Le texte que tu veux afficher sur la matrice de leds (Caractères acceptés : A-Za-z0-9 et l'espace)")
 parser.add_argument("-rs", "--rainbowspeed", help="Modifie la vitesse de défilement des couleurs", type=int, default=8)
 parser.add_argument("-d", "--duplicateframes", help="Modifie la vitesse de défilement du texte", type=int, default=1)
-parser.add_argument("-o", "--out", help="Modifie la vitesse de défilement du texte", default='custom.bin')
+parser.add_argument("-o", "--out", help="Nom du fichier de sortie", default='custom.bin')
 args = parser.parse_args()
 
 
